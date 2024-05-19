@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header {
+    position: fixed;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.logo img {
+    width: 60px; /* Adjust the width of the logo */
+    height: auto;
+    margin-right: 10px; /* Adjust the spacing between the logo and the text */
+}
+
+h1 {
+    margin: 0;
+    font-size: 34px; 
+    font-weight: bold;
+    color: #b30707; 
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+ul li{
+    margin-left: 10%;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+/* Initial hidden state for dropdowns */
+ul ul {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Background color for dropdown */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   width: 150px;
+   height: 210%;
+    z-index: 1; /* for dropdowns to appear above other content */
+}
+ul ul li{
+    margin: 18px;
+}
+/* To Display dropdown when parent list item is hovered over */
+ul li:hover > ul {
+    display: block;
+}
+ul li {
+    margin-right: 20px; /* Adjust the spacing between navigation items */
+}
+      /* HERO STYLING*/
+ #hero{
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
+    height: 65vh;
+    position: relative;
+}
+
+#hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; 
+}
+
+#hero-content h2 {
+    font-size: 46px;
+    margin-bottom: 10px;
+}
+#hero-content h2 a{
+    text-decoration: none;
+    color: rgb(70, 58, 58);
+}
+#hero-content p {
+    font-size: 22px; 
+    color: rgb(70, 58, 58);
+}
+#box-content h3{
+    font-size: 34px;
+    text-align: center;
+}
+     /* MAIN STYLING */
+     #box {
+        display: flex;
+        align-items: center;
+        box-shadow: 2px 2px 5px blue;
+    }
+    #box-content {
+        flex: 1; /* Takes remaining space */
+        padding-right: 20px; /* Add some space between image and form */
+    }
+    #box-content img {
+        max-width: 65%; /* Ensure image doesn't exceed container width */
+        height: 30%;
+        margin-top: 50px;
+        margin-left: 50px;
+        border-radius: 20px;
+    }
+    
+    #login-form {
+        flex: 1; /* Takes remaining space */
+    }
+    #flex{
+        display: flex;
+       
+    }
+    #email{
+       width: 80%;
+    }
+    #name{
+        width: 80%;
+    }
+    #password{
+        width: 80%;
+    }
+    #login-form {
+        margin-bottom: 20px;
+    }
+    
+    .form-group {
+        margin-bottom: 20px;
+    }
+    
+    .form-group label {
+        display: block;
+        font-weight: bold;
+    }
+    
+    .form-group input {
+        width: 700%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    #blue {
+        width: 80%;
+        padding: 10px;
+        background-color: #007bff; /* Button background color */
+        color: #fff; /* Button text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    button:hover {
+        background-color: #0056b3; /* Button background color on hover */
+    }
+    
+    #social-login {
+        margin-bottom: 50px;
+        display: flex;
+    }
+    
+    #social-login button {
+        padding: 10px;
+        color: #141313; /* Facebook button text color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    #social-login button:nth-child(2) {
+        margin-left: 5%;
+        }
+    
+    #social-login button:hover {
+        background-color: #2d4373; /* Facebook button background color on hover */
+    }
+    
+    #social-login button:nth-child(2):hover {
+        background-color: #c1351d; /* Google button background color on hover */
+    }
+    
+    p {
+        margin-bottom: 10px;
+    }
+    
+    p a {
+        color: #007bff; /* Link color */
+        text-decoration: none;
+    }
+    
+    p a:hover {
+        text-decoration: underline;
+    }
+   @media screen and (max-width: 765px) {
+    #box-content img{
+        display: none;
+    }
+   }  
+   @media screen and (min-width: 1400px){
+      #login-form{
+        margin-bottom: 15%;
+      }
+   }
+   
+ 

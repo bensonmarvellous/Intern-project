@@ -1,0 +1,351 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: rgb(170, 170, 151);
+}
+header {
+    background-color: #2F4F4F; /* Dark Slate Gray */
+    color: rgb(241, 236, 236); /* Ensure text is readable against the dark background */
+    padding: 20px;
+    top: 0;
+}
+nav ul li a{
+    color: antiquewhite;
+}
+.dropdown a{
+    color: black;
+}
+#search-tour{
+    margin-top: 7%;  
+}
+.search-container {
+    position: relative;
+    width: 300px; /* Adjust width as needed */
+    margin: 20px ; /* Center the container horizontally */
+}
+
+#search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888; /* Adjust color as needed */
+}
+
+#search-bar {
+    width: 100%;
+    height: 40px;
+    padding: 10px 10px 10px 30px; /* Add padding to the left to make room for the icon */
+    border: 1px solid #ddd;
+    border-radius: 25px;
+}
+
+#search-bar::placeholder {
+    color: #888; /* Adjust placeholder color as needed */
+}
+#container-2 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+#left {
+    flex: 2;
+    background-color: rgb(170, 170, 151); /* Background color for left section */
+    border-right: 1px solid #ddd; /* Optional border for separation */
+    padding: 20px;
+    margin-right: 0px;
+}
+
+
+#right {
+    flex-grow: 3;
+    padding: 1rem;
+}
+#right {
+   flex: 2; /* Adjust the flex value to control the width ratio between left and right sections */
+    background-color: #2F4F4F; /* Background color for right section */
+    padding: 60%;
+    height: 188vh;
+    margin-left: 20%;
+}
+#right h2{
+    text-align: left;
+    color: rgb(245, 242, 242);
+    font-size: 30px;
+}
+.white{
+    color: white;
+    font-size: 20px;
+}
+
+#left-content {
+    display: flex;
+    flex-direction: column; 
+}
+
+.profile {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.profile p {
+    font-size: 18px;
+    padding: 5px;
+}
+.profile i{
+padding: 15px;
+margin-left: 5px;
+}
+.profile li {
+    margin-bottom: 20px;
+}
+
+.profile p a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #302f2f; /* Text color */
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.profile p a:hover {
+    background-color: #e0e0e0; /* Background color on hover */
+}
+
+.profile p a i {
+    margin-right: 10px; /* Space between icon and text */
+    color: #2d2d31; /* Icon color */
+}
+@media screen and (max-width: 765px){
+    #search-tour{
+        margin-top: 35%;
+    }
+    #left{
+        margin-right: -30px;
+    } 
+}
+
+@media screen and (min-width: 900px){
+    #search-tour{
+        margin-top: 10%;
+    }
+}
+#container-1 {
+    display: flex;
+    gap: 40px; /* Space between boxes */
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #faf8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    width: 250px;
+    height: 80px;
+    height: 50px;
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px); /* Lift the box on hover */
+    background-color: #2F4F4F; /* Background color for right section */
+    color: white;
+    box-shadow: 2px 2px 5px white;
+}
+
+.box i {
+    font-size: 2em;
+    color: #007bff; /* Icon color */
+    margin-bottom: 10px;
+}
+
+.box p {
+    margin: 0;
+    color: #333; /* Text color */
+    font-size: 1.2em;
+    text-align: center;
+}
+#container {
+    display: flex;
+    width: 10%;
+    height: 80%;
+}
+#graph h2{
+    margin-top: 10%;
+}
+#graph hr{
+    width: 60%;
+}
+    @media screen and (max-width: 765px) {
+        #container-1 {
+            display: flex;
+            flex-direction: column;
+        }  
+        #right{
+            padding: 150%;
+            height: 240vh;
+            margin-left: 20px;
+        }
+    }
+   .straight{
+    display: flex;
+    justify-content: space-between;
+   }
+   .vertical {
+    position: absolute;
+    left: 75%; /* Center the vertical line */
+    top: 55%;
+    height: 100%;
+    margin: 10%;
+    width: 20px; /* Adjust width as needed */
+    background: linear-gradient(to bottom, transparent 0%, #333 50%, transparent 100%); /* Curved effect using gradient */
+    z-index: 1; /* Ensure it stays on top */
+    transform: rotate(120deg); /* Rotate to make it vertical */
+    border-radius: 70%; /* Make it curved */
+} 
+
+#stacked-divs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.boxes {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+   .boxes  p{
+    color: green;
+}
+#Reviews {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between review items */
+    padding: 20px;
+}
+@media screen and (max-width: 765px){
+    .review-content{
+        display: flex;
+    }
+}
+.review-content {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review-content img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-text h6 {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    font-size: 16px;
+}
+
+.review-text h6 .fa-star {
+    color: gold;
+    margin-left: 5px; /* Space between name and stars */
+}
+
+.review-text p {
+    margin: 5px 0 0 0;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin: 10px;
+    flex: 1;
+}
+
+.footer-section h3, .footer-section h4 {
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #fff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff69b4;
+}
+
+.footer-bottom {
+    background-color: #222;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

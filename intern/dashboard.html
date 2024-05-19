@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xplora</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="tour.css">
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <header class="pink">
+        <nav>
+            <a href="#" class="logo"><img src="logo.png" alt="Xplora Logo"></a>
+            <h1>Xplora</h1>     
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Tour</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Adventure</a></li>
+                        <li><a href="#">Cultural</a></li>
+                        <li><a href="#">Culinary</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Destination</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Asia</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">North America</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Blog</a></li>
+                <li>
+                    <a href="#">Pages</a>
+                    <ul class="dropdown">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                    <ul class="dropdown">
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="mybooking.html">My Bookings</a></li>
+                        <li><a href="#">My Listing</a></li>
+                        <li><a href="#">Add tour</a></li>
+                        <li><a href="myprofile.html">My Profile</a></li>
+                        <li><a href="login.html">Logout</a></li>
+                    
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li> 
+                <li>
+                    <a href="#">English</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Spanish</a></li>
+                        <li><a href="#">French</a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <section id="search-tour">
+        <div class="search-container">
+            <i id="search-icon" class="fas fa-search"></i>
+            <input type="text" id="search-bar" placeholder="Search tour">
+        </div>
+    </section>
+    <div id="container">
+    <div id="left">
+        <div id="left-content">
+            <div class="profile"> 
+                <p><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></p>
+                <p><a href="mybooking.html"><i class="fas fa-book"></i> Bookings</a></p>
+                <p><a href="#"><i class="fas fa-list"></i> My Listing</a></p>
+                <p><a href="#"><i class="fas fa-plus-circle"></i> Add Tour</a></p>
+                <p><a href="myprofile.html"><i class="fas fa-user"></i> My Profile</a></p>
+                <p><a href="login.html"><i class="fas fa-sign-out-alt"></i> Logout</a></p>
+            </div>
+           </div>
+    </div>
+            <div id="right">
+                <h2>Dashboard</h2> 
+                <p class="white">Here is your dashboard</p> 
+                <div id="container-1">
+                    <div class="box">
+                        <i class="fas fa-chart-line"></i>
+                        <p>Total Earning</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-heart"></i>
+                        <p>My wishlist</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-list"></i>
+                        <p>Total Listing</p>
+                    </div>
+                    <div class="box">
+                        <i class="fas fa-message"></i>
+                        <p>Notifications</p>
+                    </div>
+                </div>
+                <section id="graph" >
+                    <div class="vertical"></div>                                
+                    <div id="graph-content">
+                       <h2>Total page view</h2>
+                       <p>54</p> <hr>
+                       <p>54</p> <hr>
+                       <p>54</p> <hr>
+                       <p>54</p> <hr>
+                       <p>54</p> <hr>
+                       <p>54</p> <hr>
+                       <p>54</p> <hr>
+                       <p>54</p> <hr>
+                       <p>54</p> <hr> 
+                    </div> 
+                   </section> 
+                     <div class="graph-item">
+                            <p>54</p>
+                            <hr> 
+                           <div class="straight">    
+                            <p>Jan</p> 
+                            <p>Feb</p>
+                            <p>Mar</p>
+                            <p>Apr</p>
+                            <p>May</p>
+                            <p>Jun</p>
+                            <p>July</p>
+                            <p>Aug</p>
+                        </div>
+                        </div>
+                        <div id="container-3"> 
+                        <div id="stacked-divs">
+                            <div class="boxes">
+                                <h4>What's New?</h4>
+                                <p><i class="fas fa-message"></i> Congratulations, you just got a discount</p>
+                                <p><i class="fas fa-message"></i> Someone viewed your profile</p>
+                                <p><i class="fas fa-message"></i> Your trip to Bahamas is in 3 days</p>
+                                <p><i class="fas fa-message"></i> Do you know you can bring up to 4....</p>
+                            </div>
+                             <h3>Recent Reviews</h3>
+                                <div id="Reviews">
+                                    <div class="review-content">
+                                        <img src="review-1.png" alt="review image">
+                                        <div class="review-text">
+                                            <h6>Carlos Wills <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                            <p>The varieties of destinations get me excited</p>
+                                        </div>
+                                    </div>
+                                        <div class="review-content">
+                                            <img src="review-2.png" alt="review image">
+                                            <div class="review-text">
+                                                <h6>Jane Doe <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                                <p>Amazing service and beautiful locations!</p>
+                                            </div>
+                                        </div>
+                                            <div class="review-content">
+                                            <img src="review-3.png" alt="review image">
+                                            <div class="review-text">
+                                                <h6>John Smith <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                                <p>Had a fantastic time on my trip!</p>
+                                            </div>
+                                        </div>
+                                        <div class="review-content">
+                                            <img src="review-4.png" alt="review image">
+                                            <div class="review-text">
+                                                <h6>Emily Johnson <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></h6>
+                                                <p>Highly recommend this travel service.</p>
+                                            </div>
+                                        </div>       
+                            </div>    
+                                    <footer>
+                                        <div class="footer-container">
+                                            <div class="footer-section about">
+                                                <h3>Xplora</h3>
+                                                <p>Xplora is your go-to platform for exploring new destinations, discovering unique tours, and creating unforgettable experiences. Join us and start your adventure today!</p>
+                                            </div>
+                                            <div class="footer-section links">
+                                                <h4>Quick Links</h4>
+                                                <ul>
+                                                    <li><a href="#">Home</a></li>
+                                                    <li><a href="#">Tours</a></li>
+                                                    <li><a href="#">Destinations</a></li>
+                                                    <li><a href="#">Blog</a></li>
+                                                    <li><a href="#">Contact</a></li>
+                                                    <li><a href="#">About Us</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="footer-section social">
+                                                <h4>Follow Us</h4>
+                                                <div class="social-icons">
+                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="footer-bottom">
+                                            <p>&copy; 2024 Xplora. All Rights Reserved.</p>
+                                        </div>
+                                    </footer>
+                                             
+                                                     
+                       
+                        </div>     
+                        </div>               
+            </div>     
+    </div>  
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="tour.js"></script>
+
+</html>   
